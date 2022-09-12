@@ -1,7 +1,7 @@
 /**<h2>Deafio Dio - Banco Terminal</h2>
  * Solicita ao usuário as informações sobre sua conta e as imprime.
  * @author Telmo Lenz
- * @version 1
+ * @version 1.01
  */
 import java.util.Locale;
 import java.util.Scanner;
@@ -36,7 +36,7 @@ public class ContaTerminal {
 
         //Exibe mensagem com as informações armazenadas
         System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco. Sua agência é " +
-                agencia + ", conta nª " + conta + " e seu saldo, no valor de R$ " + saldo + " já está " +
+                agencia + ", conta nº " + conta + " e seu saldo, no valor de R$ " + saldo + " já está " +
                 "disponível para saque.");
     }
 }
