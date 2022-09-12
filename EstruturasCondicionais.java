@@ -1,9 +1,10 @@
 /**
-<h2>Estruturas condicionais</h2>
-Exemplos de condicionais simples, compostas, encadeadas, ternárias e de estruturas switch
-@author Telmo-Lenz
+*<h2>Estruturas condicionais</h2>
+*Exemplos de condicionais simples, compostas, encadeadas, ternárias e de estruturas switch
+*@author Telmo-Lenz
 */
-public class EstruturasCondicionais{
+public class EstruturasCondicionais
+{
 
     public static void main (String[] args){
         //Condicional simples
@@ -39,8 +40,8 @@ public class EstruturasCondicionais{
 		System.out.println(resultado);
 
         //Condição ternária 2
-        String resultado = nota >=7 ? "Aprovado" : nota >=5 && nota <7 ? "Recuperação" : "Reprovado";
-		System.out.println(resultado);
+        String resultado2 = nota >=7 ? "Aprovado" : nota >=5 && nota <7 ? "Recuperação" : "Reprovado";
+		System.out.println(resultado2);
 
         //A estrutura switch case, compara o valor de cada caso, com o da variável sequencialmente e 
         //sempre que encontra um valor correspondente, executa o código associado ao caso.
@@ -79,5 +80,4 @@ public class EstruturasCondicionais{
 		}
 		
 	}
-    }
 }

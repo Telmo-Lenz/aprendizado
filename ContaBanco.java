@@ -6,7 +6,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ContaTerminal {
+public class ContaBanco {
     /**
      * Este método é utilizado para obter e exibir as informações:
      * agencia: número da agência com dígito
@@ -15,24 +15,25 @@ public class ContaTerminal {
      * saldo: saldo informado da conta
      */
     public static void main(String[] args){
+        
         //Cria o objeto entrada no padrão americano ( . para separar decimais)
-        Scanner entrada = new Scanner(System.in).useLocale(Locale.US);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         //Solicita e armazena o número da agência
         System.out.println("Informe a agência com dígito:");
-        String agencia = entrada.next();
+        String agencia = scanner.next();
 
         //Solicita e armazena o número da conta
         System.out.println("Informe o número de sua conta:");
-        int conta = entrada.nextInt();
+        int conta = scanner.nextInt();
 
         //Solicita e armazena o nome do cliente
         System.out.println("Informe o seu nome:");
-        String nome = entrada.next();
+        String nome = scanner.next();
 
         //Solicita e armazena o saldo da conta
         System.out.println("Informe o saldo de sua conta:");
-        double saldo = entrada.nextDouble();
+        double saldo = scanner.nextDouble();
 
         //Exibe mensagem com as informações armazenadas
         System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco. Sua agência é " +
